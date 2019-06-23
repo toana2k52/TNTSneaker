@@ -1,0 +1,9 @@
+	Route::get('product','ProductController@index')->name('admin.product');
+		//add
+	Route::get('product-add','ProductController@add')->name('admin.product-add');
+	Route::post('product-add','ProductController@post_add')->name('admin.product-add');
+		//edit
+	Route::get('product-edit/{id}','ProductController@edit')->name('admin.product-edit');
+	Route::post('product-edit/{id}','ProductController@edit')->name('admin.product-edit');
+		//delete
+	Route::get('product-delete/{id}','ProductController@delete')->name('admin.product-delete');

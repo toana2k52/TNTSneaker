@@ -1,0 +1,9 @@
+	Route::get('brands','brandsController@index')->name('admin.brands');
+		//add
+	Route::get('brands-add','brandsController@add')->name('admin.brands-add');
+	Route::post('brands-add','brandsController@post_add')->name('admin.brands-add');
+		//edit
+	Route::get('brands-edit/{id}','brandsController@edit')->name('admin.brands-edit');
+	Route::post('brands-edit/{id}','brandsController@edit')->name('admin.brands-edit');
+		//delete
+	Route::get('brands-delete/{id}','brandsController@delete')->name('admin.brands-delete');
